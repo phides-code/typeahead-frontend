@@ -28,7 +28,7 @@ export const SearchItemsApiSlice = createApi({
     reducerPath: 'searchItemsApi',
     tagTypes: ['searchItemsApi'],
     endpoints: (build) => ({
-        searchItems: build.query<SearchItemsApiResponse, void>({
+        searchItems: build.query<SearchItemsApiResponse, string>({
             query: (searchText) => ({
                 url: `?q=${searchText}`,
             }),

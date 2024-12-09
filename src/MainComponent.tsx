@@ -1,5 +1,11 @@
+import TypeaheadSearch from './TypeaheadSearch';
+
 const MainComponent = () => {
-    return <div>hello world</div>;
+    return (
+        <div>
+            <TypeaheadSearch />
+        </div>
+    );
 };
 
 export default MainComponent;
